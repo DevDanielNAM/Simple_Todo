@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url(images/bgImage.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  min-height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container > h1 {
+  padding-top: 10px;
+  text-shadow: 1px 1px 3px rgba(156, 75, 243, 0.25),
+    1px 1px 5px rgba(75, 114, 243, 0.35), 1px 1px 8px rgba(243, 75, 75, 0.35);
+}
+
+.input-area {
+  display: flex;
+}
+
+#task-input {
+  height: 2em;
+  margin-right: 5px;
+  padding-left: 0.3em;
+  background-color: transparent;
+  border: 1px solid lightblue;
+  border-radius: 3px;
+  transition: 0.5s ease;
+}
+
+#task-input:focus {
+  outline: 0;
+  background-color: white;
+  box-shadow: rgba(75, 114, 243, 0.35) -1px 3px 10px,
+    rgba(156, 75, 243, 0.25) 1px -3px 10px, rgba(0, 0, 0, 0.12) 3px 5px 6px,
+    rgba(0, 0, 0, 0.12) -3px -5px 6px;
+}
+
+#add-button {
+  width: 2em;
+  height: 2em;
+  padding: 0;
+}
+
+.task-area {
+  border: 1px solid lightblue;
+  border-radius: 3px;
+  margin-top: 2em;
+}
+
+.task-tabs {
+  display: flex;
+  border-bottom: 1px solid lightblue;
+  position: relative;
+}
+
+.task-tabs > div {
+  padding: 1em;
+  cursor: pointer;
+}
+
+#under-line {
+  height: 4px;
+  width: 60px;
+  background-color: pink;
+  position: absolute;
+  left: 0;
+  top: 56px;
+  padding: 0;
+  transition: 0.7s cubic-bezier(0.67, 0.34, 0.26, 0.46);
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.task > div {
+  font-size: 1.2rem;
+}
+
+.task-done {
+  text-decoration: line-through;
+}
